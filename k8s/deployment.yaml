@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: zepto-container
-        image: danduniharika30/zepto:6395060b
+        image: danduniharika30/zepto:6bfee260
         ports:
         - containerPort: 80
