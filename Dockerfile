@@ -1,11 +1,8 @@
-# Use nginx base image
+# Use nginx to serve static HTML, JS, CSS files
 FROM nginx:latest
 
-# Remove default nginx HTML files
-RUN rm -rf /usr/share/nginx/html/*
-
-# Copy Zepto app files (update the folder name if needed)
-COPY zepto/ /usr/share/nginx/html/
+# Copy all files to nginx default public directory
+COPY zepto/ /usr/share/nginx/html
 
 # Expose port 80
 EXPOSE 80
