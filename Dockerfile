@@ -2,8 +2,7 @@
 FROM nginx:latest
 
 # Copy all files to nginx default public directory
-COPY zepto/ /usr/share/nginx/html
-
+COPY test/ /usr/share/nginx/html/
 # Expose port 80
 EXPOSE 80
 
